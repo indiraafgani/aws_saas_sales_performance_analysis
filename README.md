@@ -52,7 +52,7 @@ This analysis aims to answer the following questions:
 6. **Analyzing the Cause**
    - Product Analysis → ContactMatcher as the biggest loss driver
    - Discount Analysis → excessive discounting identified as root cause
-   - Global vs Japan Comparison → discount anomaly confirmed as Japan-specific
+   - Global vs Japan Comparison + **Hypothesis Testing (Mann-Whitney U Test)** → discount anomaly confirmed as Japan-specific
    - Discount and Profit Summary → only ≤20% discount generates profit in Japan
 7. **Business Recommendation** — actionable insights based on findings
 
@@ -63,6 +63,7 @@ This analysis aims to answer the following questions:
 - **ContactMatcher** is the primary loss driver, accounting for over 65% of Japan's total losses (-$16,922)
 - Japan applies an average discount of **71%** for Contactmatcher vs only **31%** globally
 - Contactmatcher is **profitable outside Japan**, proving the product itself is not the issue
+- The profit difference between Japan and the rest of the world is **statistically significant** (Mann-Whitney U Test, p-value < 0.05)
 - Only discounts **≤20%** generate profit in Japan — all higher discount levels result in losses without exception
 
 ---
@@ -87,4 +88,3 @@ This analysis aims to answer the following questions:
 ## Links
 - **Tableau Dashboard**: https://public.tableau.com/app/profile/indira.afgani/viz/AWSSaaSSalesDashboard-IndiraFaisaAfgani/Dashboard1?publish=yes
 - **Presentation**: https://canva.link/f02ekbt61fuw2wm
-
